@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {
   View,
   TextInput,
@@ -31,8 +31,10 @@ export default function App() {
         backgroundColor={'transparent'}
         translucent
       />
+
       <View style={styles.container}>
         <SafeAreaView style={{flex: 1}}>
+          <Text style={styles.headline1}>Meu Bloco de Notas</Text>
           <View style={styles.form}>
             <TextInput
               style={styles.input}
@@ -63,6 +65,11 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#e0e0e0',
     padding: 20,
+  },
+  headline1: {
+    marginVertical: 10,
+    fontSize: 18,
+    fontWeight: 'bold',
   },
   form: {
     flexDirection: 'row',
